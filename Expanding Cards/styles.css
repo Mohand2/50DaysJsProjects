@@ -17,6 +17,7 @@ body {
 }
 
 .panel {
+  color: rgba(255, 255, 255, 0.644);
   height: 10vh;
   width: 90vw;
   margin: 10px 0px;
@@ -26,8 +27,20 @@ body {
   background-position: center;
   flex: 0.5;
   transition: flex 0.5s ease-in;
+  position: relative;
+}
+
+h3 {
+  position: absolute;
+  opacity: 0;
+  left: 20px;
+  bottom: 5px;
+  transition: opacity 0.5s ease-in;
 }
 
 .active {
   flex: 4;
+}
+.active h3 {
+  opacity: 1;
 }
