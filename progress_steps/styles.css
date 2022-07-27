@@ -44,7 +44,7 @@ body {
   height: 0.5vh;
   width: 6vw;
   background-size: 200%;
-  transition: 0.9s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .main-btn {
@@ -57,11 +57,12 @@ body {
   height: 40px;
   margin: 9vh 20px;
   padding: 10px 20px;
-  border: #86215fde 1px solid;
+  background-color: #862160;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 7px;
+  cursor: pointer;
 }
 
 .active .round,
@@ -69,6 +70,7 @@ body {
   background-color: #553d75;
 }
 
-.btn-active {
-  background-color: #862160;
+.btn-disabled {
+  border: #86215fde 1px solid;
+  background-color: rgba(255, 255, 255, 0);
 }
