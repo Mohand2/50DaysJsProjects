@@ -9,7 +9,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: 100vh;
   overflow: hidden;
   margin: 0;
+}
+
+.panel {
+  height: 10vh;
+  width: 90vw;
+  margin: 10px 0px;
+  border-radius: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex: 0.5;
+  transition: flex 0.5s ease-in;
+}
+
+.active {
+  flex: 4;
 }
