@@ -26,7 +26,7 @@ body {
   background-size: cover;
   background-position: center;
   flex: 0.5;
-  transition: flex 0.5s ease-in;
+  transition: flex 0.5s ease-in-out;
   position: relative;
 }
 
