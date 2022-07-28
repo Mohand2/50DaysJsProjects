@@ -35,7 +35,7 @@ h1 {
 }
 
 .rotate-container {
-  transform: rotate(-20deg);
+  transform: rotate(-40deg);
   transform-origin: top left;
   transition: transform 0.6s ease-in;
 }
@@ -85,7 +85,7 @@ img {
   padding-bottom: 50px;
   background-color: #272727;
   z-index: 1;
-  transform: translateX(-50vw);
+  transform: translateX(-500px);
   transition: transform 0.8s ease-in;
   transition-delay: 0.2s;
 }
