@@ -9,16 +9,14 @@ body {
   font-family: 'Muli', sans-serif;
   position: relative;
   overflow-x: hidden;
-
-  
 }
 
 .container {
   position: absolute;
   background-color: #1f1f1f;
   color: white;
-  padding:20vh 0;
-  transform: none;
+  padding: 20vh 10vw;
+  transform-origin: top left;
   transition: transform 0.6s ease-in;
 
   z-index: 2;
@@ -34,13 +32,14 @@ body {
   justify-content: flex-start;
   padding-left: 40px;
   padding-bottom: 50px;
-  background-color:#272727;
+  background-color: #272727;
   z-index: 1;
 }
 
 .rotate-container {
   transform: rotate(-20deg);
   transform-origin: top left;
+  transition: transform 0.6s ease-in;
 }
 
 .article {
@@ -55,15 +54,27 @@ img {
 }
 
 .btn {
-  background-color: #a56547;
+  background-color: #643e2d;
   color: rgba(255, 255, 255, 0.897);
   position: fixed;
   width: 12rem;
   height: 12rem;
-  top: -70px;
-  left: -60px;
-  padding-top: 7rem;
-  padding-left: 7rem;
-  border-radius: 45%;
+  top: -28px;
+  left: -70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 50%;
+  cursor: pointer;
   z-index: 3;
+  transform: rotate(0deg);
+  transition: transform  0.6s ease-in;
+  opacity: 1;
+}
+
+.rotate-icons {
+  transform: rotate(-180deg);
+  transition: transform 0.6s ease-in;
+ 
+
 }
