@@ -35,7 +35,7 @@ h1 {
 }
 
 .rotate-container {
-  transform: rotate(-40deg);
+  transform: rotate(-30deg);
   transform-origin: top left;
   transition: transform 0.6s ease-in;
 }
@@ -81,7 +81,7 @@ img {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  padding-left: 40px;
+  padding-left: 20px;
   padding-bottom: 50px;
   background-color: #272727;
   z-index: 1;
