@@ -35,7 +35,7 @@ h1 {
 }
 
 .rotate-container {
-  transform: rotate(-30deg);
+  transform: rotate(-29deg);
   transform-origin: top left;
   transition: transform 0.6s ease-in;
 }
