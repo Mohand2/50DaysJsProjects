@@ -1,11 +1,55 @@
 :root {
   --bg-color: #262626;
+  --text-color: #f5f5f5;
+  --circle-inside: #f5f5f5;
+  --circle-outside: #f0851d;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
   background-color: var(--bg-color);
+  color: var(--text-color);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30vh;
+  /* width: 25vw; */
+  /* margin: 150px; */
+}
+
+.circle {
+  position: relative;
+  min-width: 30px;
+  min-height: 30px;
+  background-color: var(--circle-inside);
+  border-radius: 50%;
+  border: 9px solid var(--circle-outside);
+}
+
+
+
+body .project:not(:first-child) .circle::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 30vh;
+  bottom: 180%;
+  left: 25%;
+  background-color: rgb(95, 104, 104);
+}
+
+.project-info {
+  display: none;
 }
