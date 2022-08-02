@@ -7,25 +7,27 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  height: 100vh;
+  margin-bottom: 20vh;
+}
+
+main {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  /* justify-content: space-around;  */
   flex-direction: column;
 }
 
 .project {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 30vh;
-  /* width: 25vw; */
+  justify-content: space-between; /*should be commented*/
+  margin-top: 30vh; /*should be commented*/
+  width: 25vw;
   /* margin: 150px; */
 }
 
@@ -38,18 +40,19 @@ body {
   border: 9px solid var(--circle-outside);
 }
 
-
-
-body .project:not(:first-child) .circle::before {
+.project:not(:first-child) .circle::before {
   content: '';
   position: absolute;
   width: 3px;
   height: 30vh;
-  bottom: 180%;
-  left: 25%;
+  bottom: 179%;
+  left: 50%;
   background-color: rgb(95, 104, 104);
 }
 
 .project-info {
-  display: none;
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+
 }
